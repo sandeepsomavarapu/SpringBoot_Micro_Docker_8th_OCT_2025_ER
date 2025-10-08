@@ -1,0 +1,135 @@
+Framework:
+==========
+		Ready Made
+		
+		invasive			->struts
+		non-invasive		->spring-->spring boot,hibernate
+
+JSE ,jee,jme
+
+
+		web-->servlets,ejb,,,...
+
+
+1	implements Servlet
+2	extends GenericServlet
+3	extends	HttpServlet-->12
+		doGet,doPost
+
+EJB,struts
+
+1*12
+
+100*12=1200
+			heavy weight
+			light weight
+			
+class login extends HttpServlet(12)
+{
+12 methods
+
+}
+ROD JOHNSON-->heavy weight 
+EJB--->
+	interface21
+	Spring-->2003
+
+
+spring is a non-invasive framework,which is used to create light weight and loosley coupled application
+
+	loosley coupled /tightly coupled
+
+class
+object-->
+
+
+class Person{
+
+	Person(String name){
+	
+	}
+	test
+}
+
+class Employee{
+public void m1(){
+	Person person=//has-a
+	person.test();
+}
+
+}
+
+SPRING-->Dependency Injection 6.x
+
+framework--->jar
+
+
+Employee	,x,y,z		--->configuration file-->config.XML	--->		IOC
+				SpringContainer-->BeanFactory,ApplicationContext-->Object Life Cycle
+client
+
+
+			1)creation of Object
+			2)wiring of object
+			3)configuring 
+			4)destroying
+
+
+dependency injection
+IOC--->inversion of control 
+
+maven-->POM
+
+
+
+		java-->jars 
+
+			1)spring core/IOC module/dependency injection
+			2)spring JDBC
+			3)spring JPA
+			4)spring AOP
+			5)spring MVC
+			6)spring Cloud
+			7)spring ai
+			8)spring security
+			9)spring rest
+			...
+			
+			
+	Spring Core 
+		setter injection 
+		constructor injection			configuration-->xml,annoation....
+		
+		
+		autowiring	-->	byname,bytype,   constructor		
+						setter injection 
+		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
