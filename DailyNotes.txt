@@ -100,14 +100,134 @@ maven-->POM
 		setter injection 
 		constructor injection			configuration-->xml,annoation....
 		
+						setterinjection
+		autowiring	-->	byname,bytype,constructor	
+								field injection
 		
-		autowiring	-->	byname,bytype,   constructor		
 						setter injection 
 		
+			Scope
+				singleton
+				prototype
+				
+				request
+				session
+				application
+			
+		
+		qualifier and count
 			
 			
+			xml--><bean>    Product,Category
+			annoation--->@Component,@Autowired,@Configuration,@ComponentScan
+							@Scope 
+							@Qualifier
+							@Bean
+							
+		spring has given annotations @component for only user defined classes 
+		@Bean--->datasource,transaction,EntityManager
+		
+				xml--><bean>,annotation,java
+		@Component
+		Employee--	X
+		
+		
+		actuators-->beans
+		
+		@Component,@Service,@Repository,@Controller,@RestController,@Configuration
+		
+		@Repository
+		DAO	-->Service-->controller
+				@Service	@Controller
+		
+		@Bean
+		
+		
+	person--->mobile-->sim1	-->airtel-->MessageSender
+					-->sim2	-->jio
+		
+		
+		
+		Database-->MYSQL
+		
+		sun microsystem -->JDBC
+		
+		1)create tables
+		2)querys		mysql
+		3)Exception handling
+		
+		JPA-->ORM(hibernate,eclipselink,top link,ibatis....)
+		specification-->implementation
+		
+		
+				JPA-->hibernate
+				
+				1)no table creation
+				2)no querys
+				3)JPQL-->db independent
+				4)cache
+		
+		
+		jdbc
+		spring jdbc
+		
+		
+		jpa-->ORM
+		
+			@Entity
+			@Table(name="emp_info")
+			class Employee{
+				@Id
+				@Column(name="eid")
+				private int empid;
+				private String empName;
+				...
+				..
+				
 			
 			
+			}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 			
 			
 			
