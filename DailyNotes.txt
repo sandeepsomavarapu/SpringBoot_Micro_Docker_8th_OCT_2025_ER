@@ -124,7 +124,7 @@ maven-->POM
 							@Qualifier
 							@Bean
 							
-		spring has given annotations @component for only user defined classes 
+		NOTE:spring has given annotations @component for only user defined classes 
 		@Bean--->datasource,transaction,EntityManager
 		
 				xml--><bean>,annotation,java
@@ -163,10 +163,12 @@ maven-->POM
 				JPA-->hibernate
 				
 				1)no table creation
-				2)no querys
+				2)no database dependent querys
 				3)JPQL-->db independent
 				4)cache
 		
+		number
+		int
 		
 		jdbc
 		spring jdbc
@@ -188,16 +190,78 @@ maven-->POM
 			
 			}
 		
+		persistence.xml
+		
+		<persistence>
+			4 properties DB
+			<property>
+			3 properties hibernate
+			
+			
 		
 		
 		
+		@Transactional
+		
+		set()
+		
+		EntityManager-->persist()-->save()-->
+			public void addEmp(Employee emp)
+			{
+				
+			
+			}
+		
+		
+		TypedQuery-->ResultSet
+		
+		
+		@onetoone(p,fetchtype-eager,lazy)
+		
+	JPA
+	
+	
+	EmployeeCrud
+	
+	EmployeeRepo<-->	EmployeeService	<-->	EmployeeController
+														Scanner
+		EM						repo					Service
+		persist					addEmp					1.addemployee
+														DTO
+	
+	Spring+JPA
+		transaction  @bean
+		datasource
+		persistence.xml-->configuration
+		dependencies   -->maven
+		server		   -->
+		
+	Spring boot+JPA	
+	
+		1)Auto Configuration:most of the commonly used classes already configured by SB
+		2)starters:maven dependencies(starter-parent)-->60+spring datajpa
+		3)actuators-->rest endpoints  insite
+		4)embeded server    web-->tomcat ,exclusions-->
+		5)in memory db    h2
 		
 		
 		
+		  
+	
 		
 		
-		
-		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 		
 		
 		
