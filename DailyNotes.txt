@@ -246,6 +246,146 @@ maven-->POM
 		
 		
 		
+		springbootjpa-->
+		
+		Datajpa	-->Repository Layer
+		
+			CrudRepository,JpaRepository-->I
+		
+			findAll-->DSL grammer methods
+		
+		web-->servlets
+			spring MVC-->user-->app
+			spring rest
+			validations,exception handling
+			
+			SpringBootRestDatajpaEmployeeManagement
+			
+			
+		Webservices:	application to application
+			
+										java			   python
+				sbi atm card -->  icici atm machine  --->sbi server
+			
+			
+			SP
+			RMI
+			EJB			-->java<-->java
+			
+			DCOM	-->.net <-->.net
+			RPC		-->c/c++<-->c/c++
+			CORBA    interoperable
+			
+			Webservices:
+					SOAP
+					REST-->web
+				
+			
+			@GetMapping
+			@PostMapping
+			@PutMapping
+			@deleteMapping
+			
+			
+			
+			Validations
+			exception handling
+			
+			1.controller level 
+			
+			2.Application level
+			
+			
+			@ExceptionHandler()
+			public void empNotFound()
+			{
+			}
+			
+			validations
+			
+		Bean validations
+		
+Microservices:
+================		
+		
+		monolithic architecture
+		microservices architecture
+		
+		
+									
+		shopping app-->	login
+						products      1 lakh
+						cart
+						order		  10000
+						payment
+						...
+						...
+		
+		tightly coupled
+		
+		scalling 
+		
+		one db/server
+		
+		technology/framework
+		
+		size
+		
+		
+	Decompose,devide,split your large application into smaller services
+		and later communicate them
+		
+		
+		
+			independently developed
+			independently scalled
+			independently deployable
+		
+		m1
+		
+		
+		m2
+		
+		
+		m3
+		
+		communication
+				synchronous  --->RestTemplate,Open Feign,webclient
+				asynchronous --->kafka,rabbitmq,activemq
+	
+		
+		
+		problems 
+		
+		spring cloud 
+			config server,eureka server,api gateway,circuitbreaker
+		
+				JWT
+				
+				
+				
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		  
 	
 		
