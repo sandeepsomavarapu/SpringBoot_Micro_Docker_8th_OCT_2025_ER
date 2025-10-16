@@ -348,22 +348,83 @@ Microservices:
 		
 		
 		m3
-		
-		communication
-				synchronous  --->RestTemplate,Open Feign,webclient
+								loadBalanced
+		communication					Blocking thread		non-blocking	reactive programming
+				synchronous  --->RestTemplate,Open Feign,webclient(HTTP)
 				asynchronous --->kafka,rabbitmq,activemq
 	
-		
+			
 		
 		problems 
 		
 		spring cloud 
-			config server,eureka server,api gateway,circuitbreaker
+			config server,eureka server,api gateway,circuitbreaker,JWT
 		
-				JWT
+		Docker
+				
+					           Repository
+					  
+			CruRepository			PagingAndSortingRepository
+			
+		ListCrudRepository	 QBE      ListPagingAndSortingRepository
+		
+			
+							JpaRepository
 				
 				
-				
+			HTTPS/Http example	
+		
+		
+		
+		
+		Spring Reactive web(Web client)
+		
+		common configuration properties 
+		
+		
+		Spring cloud 
+		
+			centralised configuration,config server(github)/consul
+			
+		Config Server Steps 
+		
+		1.create new spring boot project by adding config-server 
+			along with @SpringBootApplication add this @EnableConfigServer
+			
+			in properties file add
+			spring.cloud.config.server.git.uri=git url
+			
+		2.for each microservice will add config-client
+			in properties file add
+			spring.config.import=optional:configserver:http://localhost:1234
+
+		
+		
+		Service Registry/Discovery Steps
+
+				1.create new spring boot project by adding eureka-server 
+			along with @SpringBootApplication add this @EnableEurekaServer
+			
+			in properties file add
+			eureka.client.register-with-eureka=false
+			eureka.client.fetch-registry=false
+			
+		2.for each microservice will add eureka-client
+
+		
+			Load Balancing	RestTemplate @LoadBalanced
+							@FeignClient(name="appname")
+	
+		
+		Api Gate way Steps
+		
+			1.create new starter-project by adding
+					gate-way,eureka-client,webflux
+			2.in properties file
+					uri,predicate,id for each microservice
+		
+		
+		
 		
 		
 		
